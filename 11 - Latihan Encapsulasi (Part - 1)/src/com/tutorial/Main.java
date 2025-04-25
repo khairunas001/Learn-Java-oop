@@ -39,11 +39,11 @@ class Player {
     }
 
     public int MaxHealth() {
-        return this.baseHealth + this.level * this.incrementAttack + this.armor.getAddHealth();
+        return this.baseHealth + this.level * this.incrementHealth + this.armor.getAddHealth();
     }
 
     public int getAttackPower() {
-        return this.baseAttack + this.level * incrementAttack + this.weapon.getAttack();
+        return this.baseAttack + this.level * this.incrementAttack + this.weapon.getAttack();
 
     }
 }
